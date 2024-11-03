@@ -1,0 +1,46 @@
+// 定義背景與文字顏色的實用類別
+.bg-third {
+  background-color: $third !important;
+}
+
+.text-third {
+  color: $third !important;
+}
+
+.bg-fourth {
+  background-color: $fourth !important;
+}
+
+.text-fourth {
+  color: $fourth !important;
+}
+
+.btn-fourth {
+  background-color: $fourth;
+  color: $primary;
+}
+
+.btn-fourth:hover {
+  background-color: darken($fourth, 10%);
+  color: $primary;
+}
+
+.fixed-top {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.nav-link {
+  &:hover {
+    background-color: $primary;
+    color: $secondary !important;
+  }
+
+  &.active {
+    background-color: $primary; // 活動狀態的背景顏色
+    color: $secondary !important; // 活動狀態的文字顏色
+  }
+}
